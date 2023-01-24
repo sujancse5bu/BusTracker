@@ -1,0 +1,32 @@
+{
+  "name": "bus_tracker_api",
+  "version": "1.0.0",
+  "description": "This will provide the api of tracking the busses",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index"
+  },
+  "author": "Sujan Mridha",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^6.7.0",
+    "helmet": "^6.0.1",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.8.4",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
