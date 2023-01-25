@@ -12,7 +12,7 @@ import bodyParser from "body-parser"
 import dotenv from "dotenv"
 
 // Routers
-
+import userRouter from './src/routes/user.js'
 
 
 
@@ -87,7 +87,7 @@ app.use((req, res, next) => {
 
 
 
-// app.use("/api/user", userRouter)
+app.use("/api/user", userRouter)
 
 app.use("*", (req, res) => {
   res.status(404).json({ status: "Fail", data: "URL Not Found !" });

@@ -23,7 +23,7 @@ class _BussesState extends State<Busses> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Busses'),
+        title: const Text('Buses'),
       ),
       body: Container(
         padding: const EdgeInsets.all(12.0),
@@ -91,12 +91,12 @@ class _BussesState extends State<Busses> {
     return InkWell(
       child: Container(
         width: MediaQuery.of(context).size.width,
-        height: 100,
+        height: 70,
         child: Card(
-          color: Colors.black45,
+          color: Colors.black12,
           child: Padding(
             padding: const EdgeInsets.only(
-                top: 8.0, bottom: 8.0, left: 50, right: 8),
+                top: 8.0, bottom: 8.0, left: 20, right: 8),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceAround,

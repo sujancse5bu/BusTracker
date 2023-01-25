@@ -15,11 +15,29 @@ class MyApp extends StatelessWidget {
       title: 'Bus Tracker',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.indigo,
-      ),
+          // primarySwatch: Color.fromARGB(1, 255, 179, 158),
+          primarySwatch: black),
       home: const MyHomePage(title: 'Home'),
     );
   }
+
+  static const _pink = 0xFFFFB39E;
+
+  static const MaterialColor black = MaterialColor(
+    _pink,
+    const <int, Color>{
+      50: const Color(0xFFFFB39E),
+      100: const Color(0xFFFFB39E),
+      200: const Color(0xFFFFB39E),
+      300: const Color(0xFFFFB39E),
+      400: const Color(0xFFFFB39E),
+      500: const Color(0xFFFFB39E),
+      600: const Color(0xFFFFB39E),
+      700: const Color(0xFFFFB39E),
+      800: const Color(0xFFFFB39E),
+      900: const Color(0xFFFFB39E),
+    },
+  );
 }
 
 class MyHomePage extends StatefulWidget {

@@ -1,5 +1,6 @@
 import 'package:bus_tracker/ui/busses.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -25,9 +26,9 @@ class _LoginState extends State<Login> {
                 alignment: Alignment.center,
                 padding: const EdgeInsets.all(10),
                 child: const Text(
-                  'Bus Trakcer',
+                  'Let\'s Go',
                   style: TextStyle(
-                      color: Colors.blue,
+                      color: Color.fromARGB(255, 16, 16, 16),
                       fontWeight: FontWeight.w500,
                       fontSize: 30),
                 )),
@@ -75,6 +76,7 @@ class _LoginState extends State<Login> {
                   onPressed: () {
                     print(passwordController.text);
                     print(passwordController.text);
+
                     Navigator.push(
                         context,
                         MaterialPageRoute(
@@ -96,7 +98,31 @@ class _LoginState extends State<Login> {
                 )
               ],
             ),
+            const SizedBox(
+              height: 50.0,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                // const Icon(
+                //   Icons.directions_bus,
+                //   size: 150.0,
+                //   color: Colors.black12,
+                // )
+                Image.asset(
+                  'assets/images/bus-logo.png',
+                  fit: BoxFit.contain,
+                  width: 250.0,
+                )
+              ],
+            )
           ],
         ));
   }
+
+  // Future<HttpClientResponse> handleLogin() async {
+  //   Map<String, dynamic> jsonMap = {
+  //     "email": ""
+  //   }
+  // }
 }
