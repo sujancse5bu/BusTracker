@@ -26,6 +26,7 @@ class _BussesState extends State<Busses> {
         title: const Text('Buses'),
       ),
       body: Container(
+        decoration: Utils.gradientDecoration(),
         padding: const EdgeInsets.all(12.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
